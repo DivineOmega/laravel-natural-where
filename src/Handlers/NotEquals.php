@@ -21,6 +21,9 @@ class NotEquals implements HandlerInterface
             'is not identical to',
             '!=',
             '<>',
+            'isn\'t',
+            'is not',
+            'ain\'t',
         ];
     }
 
