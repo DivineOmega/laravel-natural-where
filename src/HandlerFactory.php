@@ -35,6 +35,6 @@ class HandlerFactory
 
         $handler = $similarityToHandlerMap[$highestSimilarity];
 
-        return $handler;
+        return new $handler;
     }
 }
