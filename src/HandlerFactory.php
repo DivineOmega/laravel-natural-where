@@ -9,7 +9,7 @@ class HandlerFactory
 {
     private $operator;
 
-    private $handlers = [
+    private $handlerClasses = [
         Contains::class,
     ];
 
@@ -22,8 +22,10 @@ class HandlerFactory
     {
         $similarityToHandlerMap = [];
 
-        foreach ($this->handlers as $handler) {
+        foreach ($this->handlerClasses as $handlerClass) {
             /** @var HandlerInterface $handler */
+            $handler = new $handlerClass;
+
             foreach ($handler->getPhrases() as $phrase) {
                 $similarity = similar_text($this->operator, $phrase);
                 $similarityToHandlerMap[$similarity] = $handler;
@@ -35,6 +37,6 @@ class HandlerFactory
 
         $handler = $similarityToHandlerMap[$highestSimilarity];
 
-        return new $handler;
+        return $handler;
     }
 }
