@@ -24,3 +24,10 @@ $query = \App\User::query()
     ->naturalWhere('id', 'is one of the following', [1, 2, 3])
     ->get();
 ```
+
+This example will produce the following SQL query.
+
+```sql
+select * from `users` where (`created_at` >= '2018' and `created_at` <= '2018') 
+and `email` LIKE '%jordan%' and `name` != 'Jordan Smith' and `id` in (1, 2, 3)
+```
