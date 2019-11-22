@@ -15,7 +15,7 @@ class HandlerFactory
 
     public function __construct(string $operator)
     {
-        $this->operator = $operator;
+        $this->operator = strtolower($operator);
     }
 
     public function getHandler()
