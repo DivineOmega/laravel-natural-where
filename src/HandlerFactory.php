@@ -39,8 +39,8 @@ class HandlerFactory
             $handler = new $handlerClass;
 
             foreach ($handler->getPhrases() as $phrase) {
-                $similarity = similar_text($this->operator, $phrase);
-                $similarityToHandlerMap[$similarity] = $handler;
+                similar_text($this->operator, $phrase, $similarity);
+                $similarityToHandlerMap[(string) $similarity] = $handler;
             }
         }
 
@@ -48,7 +48,7 @@ class HandlerFactory
         $highestSimilarity = max($similarities);
 
         $handler = $similarityToHandlerMap[$highestSimilarity];
-
+        
         return $handler;
     }
 }
