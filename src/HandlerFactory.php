@@ -2,6 +2,8 @@
 
 namespace DivineOmega\LaravelNaturalWhere;
 
+use DivineOmega\LaravelNaturalWhere\Handlers\Between;
+use DivineOmega\LaravelNaturalWhere\Handlers\BetweenExclusive;
 use DivineOmega\LaravelNaturalWhere\Handlers\Contains;
 use DivineOmega\LaravelNaturalWhere\Handlers\DoesNotContain;
 use DivineOmega\LaravelNaturalWhere\Handlers\Equals;
@@ -29,6 +31,8 @@ class HandlerFactory
         LessThanOrEquals::class,
         In::class,
         NotIn::class,
+        Between::class,
+        BetweenExclusive::class,
     ];
 
     public function __construct(string $operator)
