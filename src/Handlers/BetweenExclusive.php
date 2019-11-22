@@ -28,8 +28,8 @@ class BetweenExclusive implements HandlerInterface
         }
 
         return $query->where(function ($query) use ($field, $value) {
-            $query->where($field, '>', $value);
-            $query->where($field, '<', $value);
+            $query->where($field, '>', $value[0]);
+            $query->where($field, '<', $value[1]);
         });
     }
 }
