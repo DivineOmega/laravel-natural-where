@@ -19,6 +19,7 @@ class GreaterThan implements HandlerInterface
             'higher than',
             'bigger than',
             'after',
+            'is exclusively after',
             'is after',
         ];
     }

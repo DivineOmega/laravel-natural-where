@@ -19,6 +19,7 @@ class LessThan implements HandlerInterface
             'lower than',
             'smaller than',
             'before',
+            'is exclusively before',
             'is before',
         ];
     }

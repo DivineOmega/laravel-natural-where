@@ -20,6 +20,7 @@ class GreaterThanOrEquals implements HandlerInterface
             'bigger than or equal to',
             'after or equal to',
             'is after or equal to',
+            'is inclusively after',
             'greater than or the same as',
             'is greater than or the same as',
         ];
