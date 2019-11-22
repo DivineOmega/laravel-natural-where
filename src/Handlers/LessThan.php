@@ -25,6 +25,6 @@ class LessThan implements HandlerInterface
 
     public function handle(Builder $query, string $field, $value): Builder
     {
-        return $query->where($field, '>', $value);
+        return $query->where($field, '<', $value);
     }
 }
