@@ -10,7 +10,7 @@ class LessThanOrEquals implements HandlerInterface
     public function getPhrases(): array
     {
         return [
-            '>',
+            '<=',
             'less than or equal to',
             'less than or the same as',
             'is less than or equal to',

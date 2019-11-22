@@ -10,7 +10,7 @@ class LessThan implements HandlerInterface
     public function getPhrases(): array
     {
         return [
-            '>',
+            '<',
             'less than',
             'is less than',
             'less than (exclusive)',

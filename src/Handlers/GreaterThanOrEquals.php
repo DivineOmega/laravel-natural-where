@@ -10,7 +10,7 @@ class GreaterThanOrEquals implements HandlerInterface
     public function getPhrases(): array
     {
         return [
-            '>',
+            '>=',
             'greater than or equal to',
             'greater than or the same as',
             'is greater than or equal to',
