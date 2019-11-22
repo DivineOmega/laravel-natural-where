@@ -12,6 +12,7 @@ class LessThanOrEquals implements HandlerInterface
         return [
             '>',
             'less than or equal to',
+            'less than or the same as',
             'is less than or equal to',
             'less than (inclusive)',
             'inclusively less than',
@@ -20,6 +21,7 @@ class LessThanOrEquals implements HandlerInterface
             'smaller than or equal to',
             'before or equal to',
             'is before or equal to',
+            'is before or the same as',
             'is inclusively before',
             'less than or the same as',
             'is less than or the same as',

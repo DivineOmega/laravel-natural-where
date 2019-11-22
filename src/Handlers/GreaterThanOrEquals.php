@@ -12,6 +12,7 @@ class GreaterThanOrEquals implements HandlerInterface
         return [
             '>',
             'greater than or equal to',
+            'greater than or the same as',
             'is greater than or equal to',
             'greater than (inclusive)',
             'inclusively greater than',
@@ -20,6 +21,7 @@ class GreaterThanOrEquals implements HandlerInterface
             'bigger than or equal to',
             'after or equal to',
             'is after or equal to',
+            'is after or the same as',
             'is inclusively after',
             'greater than or the same as',
             'is greater than or the same as',
