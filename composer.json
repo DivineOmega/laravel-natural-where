@@ -1,0 +1,27 @@
+{
+    "name": "divineomega/laravel-natural-where",
+    "description": "Laravel Natural Where extends the Laravel query builder to allow expressing of where operators in natural language.",
+    "type": "library",
+    "require": {
+        "laravel/framework": "^5.6||^6.0"
+    },
+    "license": "LGPL-3.0-only",
+    "authors": [
+        {
+            "name": "Jordan Hall",
+            "email": "jordan@hall05.co.uk"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "DivineOmega\\LaravelNaturalWhere\\": "./src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "DivineOmega\\LaravelNaturalWhere\\ServiceProvider"
+            ]
+        }
+    }
+}
