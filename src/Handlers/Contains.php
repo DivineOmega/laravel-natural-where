@@ -11,7 +11,11 @@ class Contains implements HandlerInterface
     {
         return [
             'contains',
+            'contains the word',
+            'contains the letter',
             'has in it',
+            'includes the word',
+            'includes the letter',
         ];
     }
 

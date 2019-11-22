@@ -3,13 +3,16 @@
 namespace DivineOmega\LaravelNaturalWhere;
 
 use DivineOmega\LaravelNaturalWhere\Handlers\Contains;
+use DivineOmega\LaravelNaturalWhere\Handlers\DoesNotContain;
 use DivineOmega\LaravelNaturalWhere\Handlers\Equals;
 use DivineOmega\LaravelNaturalWhere\Handlers\GreaterThan;
 use DivineOmega\LaravelNaturalWhere\Handlers\GreaterThanOrEquals;
+use DivineOmega\LaravelNaturalWhere\Handlers\In;
 use DivineOmega\LaravelNaturalWhere\Handlers\LessThan;
 use DivineOmega\LaravelNaturalWhere\Handlers\LessThanOrEquals;
 use DivineOmega\LaravelNaturalWhere\Handlers\NotEquals;
 use DivineOmega\LaravelNaturalWhere\Interfaces\HandlerInterface;
+use Illuminate\Validation\Rules\NotIn;
 
 class HandlerFactory
 {
@@ -17,12 +20,15 @@ class HandlerFactory
 
     private $handlerClasses = [
         Contains::class,
+        DoesNotContain::class,
         Equals::class,
         NotEquals::class,
         GreaterThan::class,
         GreaterThanOrEquals::class,
         LessThan::class,
         LessThanOrEquals::class,
+        In::class,
+        NotIn::class,
     ];
 
     public function __construct(string $operator)
