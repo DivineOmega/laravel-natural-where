@@ -28,6 +28,6 @@ $query = \App\User::query()
 This example will produce the following SQL query.
 
 ```sql
-select * from `users` where (`created_at` >= '2018' and `created_at` <= '2018') 
+select * from `users` where (`created_at` >= '2018' and `created_at` <= '2020') 
 and `email` LIKE '%jordan%' and `name` != 'Jordan Smith' and `id` in (1, 2, 3)
 ```
