@@ -8,11 +8,11 @@ use DivineOmega\LaravelNaturalWhere\Handlers\Equals;
 use DivineOmega\LaravelNaturalWhere\Handlers\GreaterThan;
 use DivineOmega\LaravelNaturalWhere\Handlers\GreaterThanOrEquals;
 use DivineOmega\LaravelNaturalWhere\Handlers\In;
+use DivineOmega\LaravelNaturalWhere\Handlers\NotIn;
 use DivineOmega\LaravelNaturalWhere\Handlers\LessThan;
 use DivineOmega\LaravelNaturalWhere\Handlers\LessThanOrEquals;
 use DivineOmega\LaravelNaturalWhere\Handlers\NotEquals;
 use DivineOmega\LaravelNaturalWhere\Interfaces\HandlerInterface;
-use Illuminate\Validation\Rules\NotIn;
 
 class HandlerFactory
 {
