@@ -15,5 +15,12 @@ class ServiceProvider extends BaseServiceProvider
                 ->getHandler()
                 ->handle($this, $field, $value);
         });
+
+        Builder::macro('naturalOrWhere', function($field, $operator, $value) {
+            /** @var Builder $this */
+            $this->orWhere(function ($query) use ($field, $operator, $value) {
+                $this->naturalWhere($field, $operator, $value);
+            });
+        });
     }
 }
