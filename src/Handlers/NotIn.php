@@ -22,7 +22,7 @@ class NotIn implements HandlerInterface
         ];
     }
 
-    public function handle(Builder $query, string $field, $value): Builder
+    public function handle(Builder $query, $field, $value): Builder
     {
         if (!is_array($value)) {
             $value = [$value];
