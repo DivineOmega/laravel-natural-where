@@ -27,7 +27,7 @@ class NotEquals implements HandlerInterface
         ];
     }
 
-    public function handle(Builder $query, string $field, $value): Builder
+    public function handle(Builder $query, $field, $value): Builder
     {
         return $query->where($field, '!=', $value);
     }
